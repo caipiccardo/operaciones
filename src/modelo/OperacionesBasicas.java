@@ -13,45 +13,45 @@ public class OperacionesBasicas {
         this.num2 = num2;
     }
     
-    public int sumar(){
+    public double sumar(double a, double b){
         
-        if (this.num1 == 0 || this.num2 == 0) {
+        if (a == 0 || b == 0) {
             
             return 0;
         }else{
-            return this.num1+this.num2;
+            return a+b;
         }
         
     }
     
-    public int restar(){
+    public double restar(double a, double b){
         
-        if(this.num1< this.num2){
+        if(a< b){
             return 0;
         }else{
-            return this.num1 - this.num2;
+            return a - b;
         }
 
     }
     
-    public int multiplicar(){
+    public double multiplicar(double a, double b){
         
-        if (this.num2 == 0) {
+        if (b == 0) {
             return 1;
         }else{
             
-        return this.num1*this.num2;
+        return a*b;
         }
     }
     
     
-    public int dividir(){
+    public double dividir(double a, double b){
              
-        if (this.num2 == 0) {
+        if (b == 0) {
             return 0;
         }else{
             
-        return this.num1/this.num2;
+        return a/b;
         }
     }
 
